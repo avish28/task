@@ -1,0 +1,34 @@
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.schedule {
+    width: 70vw;
+    display: flex;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #8c8c8c, #a7a7a7);
+    box-shadow:  20px 20px 60px #858585,
+                -20px -20px 60px #b3b3b3;
+    overflow: hidden;
+}
+
+.scheduled, .unscheduled {
+    width: 50%;
+}
+
+.scheduled-heading, .unscheduled-heading {
+    font-size: 1.4em;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    padding: 5%;
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.scheduled-body, .unscheduled-body {
+    max-height: 50vh;
+    overflow-y: auto;
+}
